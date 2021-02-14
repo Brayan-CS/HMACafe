@@ -1,14 +1,13 @@
 const contenedor = document.querySelector('.flex-container')
 
 
-
 let contador = 0;
 
 function crearLlave(nombre, modelo, precio){
 
     contador ++;
 
-    img = "<img class = 'llave-img' src = 'https://images-na.ssl-images-amazon.com/images/I/31Tg-A%2Bu2SL._SX342_.jpg'>";
+    img = "<img class = 'img3' src = 'https://images.vexels.com/media/users/3/193473/preview2/b9db46da0bcef4d45ddaccef807f7e2b-maqueta-de-empaque-de-bolsa-de-cafe.jpg'>";
 
     nombre =  `<h2>${nombre}</h2>`;
 
@@ -22,16 +21,13 @@ function crearLlave(nombre, modelo, precio){
 
 
 
-
-
-
 let documentFragment = document.createDocumentFragment();
 
-for (var i = 1;  i <= 9 ; i++ ){
+for (var i = 1;  i <= 3 ; i++ ){
 
     let modeloRandom = Math.round(Math.random()*10000);
     let precioRandom = Math.round(Math.random()*100);
-    let llave = crearLlave(`Producto ${i}`,`Referencia ${modeloRandom}`, `precio USD $${precioRandom}` )
+    let llave = crearLlave(`Oferta ${i}`,`Referencia ${modeloRandom}`, `precio USD $${precioRandom}` )
     let div = document.createElement('DIV');
     div.addEventListener('click', ()=>{
         document.querySelector('.key-data').value = modeloRandom; })
