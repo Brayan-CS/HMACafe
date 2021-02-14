@@ -30,8 +30,8 @@ let documentFragment = document.createDocumentFragment();
 for (var i = 1;  i <= 9 ; i++ ){
 
     let modeloRandom = Math.round(Math.random()*10000);
-    let precioRandom = Math.round(Math.random()*100);
-    let llave = crearLlave(`Producto ${i}`,`Referencia ${modeloRandom}`, `precio USD $${precioRandom}` )
+    let precioRandom = Math.round(Math.random()*10000);
+    let llave = crearLlave(`Producto ${i}`,`Referencia ${modeloRandom}`, `precio COP $${precioRandom}` )
     let div = document.createElement('DIV');
     div.addEventListener('click', ()=>{
         document.querySelector('.key-data').value = modeloRandom; })
