@@ -1,5 +1,7 @@
 
-  body {
+
+
+body {
     
 
    
@@ -7,6 +9,17 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+  }
+
+
+  a{
+
+    text-decoration: none;
+  }
+
+  a:visited{
+
+    color: black;
   }
 .contenedor_titulo{
 
@@ -53,7 +66,8 @@
     text-align: center;
     margin-left: 40px;
     margin-right: 40px;
-    font-family: sans-serif
+    font-family: sans-serif;
+    text-decoration: none;
     
    
 }
